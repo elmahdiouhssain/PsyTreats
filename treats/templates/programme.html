@@ -1,0 +1,246 @@
+{% extends "__layout__.html" %}
+{% block content %}
+
+<style type="text/css">
+    /*  Main section  */
+.main{
+    position: relative;
+    border-left: 1px #e1e0e0 solid;
+    border-right: 1px #e1e0e0 solid;
+    height: auto;
+    overflow: hidden;
+}
+
+.main article{
+    margin: 80px 0;
+    overflow: hidden;
+}
+
+
+.main .article_image,
+.main .post{
+    float: left; 
+}
+
+.main .article_image{
+    width: 470px;
+    margin-right: 40px;
+}
+
+
+.main .post{
+    width: 430px;
+    float: left;
+}
+
+.main .post h1.title,
+.main2 .post h1.title{
+    font-family: 'LatoBold', 'Helvetica', arial;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.main .title a,
+.main2 .title a{
+    text-decoration: none;
+    color: #4f4e4e;
+}
+
+.main .title a:hover,
+.main2 .title a:hover{
+    color: #58c93a;
+}
+
+.main .post p,  
+.main2 .post p{ 
+    font-family: 'LatoRegular', 'Helvetica', arial;
+    font-size: 16px;
+    color: #606060;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.main a.read_more,
+.main2 a.read_more{
+    font-family: 'LatoRegular', 'Helvetica', arial;
+    display: inline-block;
+    padding: 10px 30px 13px 30px;
+    background: #ffffff;
+    border: 2px #c2c2c2 solid;
+    color: #c2c2c2;
+    text-decoration: none;
+    margin-top: 14px;
+
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+}
+
+.main a.read_more:hover,
+.main2 a.read_more:hover{
+    border: 2px #58c93a solid;
+    color: #58c93a;
+}
+
+.main a.read_more i.read_more_arrow,
+.main2 a.read_more i.read_more_arrow{
+    width: 15px;
+    height: 7px;
+    background: url('../img/read_more_arrow.png') no-repeat;
+    display: inline-block;
+    opacity: 0;
+    margin-left: -5px;
+}
+
+.main a.read_more:hover i.read_more_arrow,
+.main2 a.read_more:hover i.read_more_arrow{
+    opacity: 1;
+    margin-left: 5px;
+}
+
+.main2{
+    padding-top: 80px;
+    position: relative;
+    border-left: 1px #e1e0e0 solid;
+    border-right: 1px #e1e0e0 solid;
+    height: auto;
+    overflow: hidden;
+}
+
+.main2 .content{
+    width: 620px;
+    float: left;
+}
+
+.main2 .post{
+    width: 580px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+</style>
+
+<header class="headerbannerslider ratio-1by1 ratio-sm-3by2 ratio-md-2by1 ">
+    <div class="slider" data-speed="3000">
+                <div>
+                    <div class="content">
+                        <picture><!--[if IE 9]><video style="display:none;"><![endif]--><source media="(min-width: 2200px)" srcset="/static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000, /static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000 2x"><source media="(min-width: 992px) and (max-width: 1199px)" srcset="/static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=1200&amp;rnd=131794099050000000, /static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000 2x"><source media="(min-width: 768px) and (max-width: 991px)" srcset="/static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=990&amp;rnd=131794099050000000, /static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000 2x"><source media="(min-width: 576px) and (max-width: 767px)" srcset="/static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.6666666666666666666666666667&amp;width=767&amp;rnd=131794099050000000, /static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.6666666666666666666666666667&amp;width=1400&amp;rnd=131794099050000000 2x"><source media="(min-width: 1px) and (max-width: 575px)" srcset="/static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=1&amp;width=575&amp;rnd=131794099050000000, /static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=1&amp;width=1150&amp;rnd=131794099050000000 2x"><!--[if IE 9]></video><![endif]--><img alt="fullsizeoutput_10c7.jpeg" class="lazyload" data-src="/static/img/nature-hollywood.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000"></picture>
+                    </div>
+                </div>
+                <div>
+                     <div class="content">
+                        <picture><!--[if IE 9]><video style="display:none;"><![endif]--><source media="(min-width: 2200px)" srcset="/static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000, /static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000 2x"><source media="(min-width: 992px) and (max-width: 1199px)" srcset="/static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=1200&amp;rnd=131794099050000000, /static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000 2x"><source media="(min-width: 768px) and (max-width: 991px)" srcset="/static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=990&amp;rnd=131794099050000000, /static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000 2x"><source media="(min-width: 576px) and (max-width: 767px)" srcset="/static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.6666666666666666666666666667&amp;width=767&amp;rnd=131794099050000000, /static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.6666666666666666666666666667&amp;width=1400&amp;rnd=131794099050000000 2x"><source media="(min-width: 1px) and (max-width: 575px)" srcset="/static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=1&amp;width=575&amp;rnd=131794099050000000, /static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=1&amp;width=1150&amp;rnd=131794099050000000 2x"><!--[if IE 9]></video><![endif]--><img alt="fullsizeoutput_10c7.jpeg" class="lazyload" data-src="/static/img/175790217.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000"></picture>
+                    </div>
+                </div>
+                <div>
+                     <div class="content">
+                        <picture><!--[if IE 9]><video style="display:none;"><![endif]--><source media="(min-width: 2200px)" srcset="/static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000, /static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000 2x"><source media="(min-width: 992px) and (max-width: 1199px)" srcset="/static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=1200&amp;rnd=131794099050000000, /static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000 2x"><source media="(min-width: 768px) and (max-width: 991px)" srcset="/static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=990&amp;rnd=131794099050000000, /static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000 2x"><source media="(min-width: 576px) and (max-width: 767px)" srcset="/static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.6666666666666666666666666667&amp;width=767&amp;rnd=131794099050000000, /static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.6666666666666666666666666667&amp;width=1400&amp;rnd=131794099050000000 2x"><source media="(min-width: 1px) and (max-width: 575px)" srcset="/static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=1&amp;width=575&amp;rnd=131794099050000000, /static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=1&amp;width=1150&amp;rnd=131794099050000000 2x"><!--[if IE 9]></video><![endif]--><img alt="fullsizeoutput_10c7.jpeg" class="lazyload" data-src="/static/img/33769550-31038105.jpg?anchor=center&amp;mode=crop&amp;heightratio=0.5&amp;width=2000&amp;rnd=131794099050000000"></picture>
+                    </div>
+                </div>
+                <div>
+
+                    </header>
+
+<div class="textcenterwide sp spb-half ">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1>The Programme</h1>
+                
+                    <p>
+                        We will consider and tailor our programme to accommodate your personal journey.
+                        It will begin on Day 1 of your trip and come to a close on Day 7. The programme is
+                        based on an intimate group model with a maximum of 8 guests. It is
+                        psychotherapy-lead and has been creatively designed to provide a structured
+                        exploration of your existing thinking and the narrative behind it. Our model safely
+                        allows you to understand and explore your relationships with yourself, others, and
+                        the things that cause you stress or anxiety. It will alter your approach to every
+                        aspect of your life and allow you to make significant changes to any areas you feel
+                        require difference.
+                        We use specific psychotherapeutic interventions to enable understanding and allow
+                        the challenge of existing and old behaviours where they are unhelpful. We offer
+                        space for individual and shared exploration and reflection.
+                        Our purpose is to help you discover illuminating comprehension, reliable confidence
+                        and a wonderful sense of empowerment. We intend that you leave us feeling
+                        enlightened, relaxed and positive.
+                        To enhance our programme we will offer daily yoga practice with a qualified
+                        instructor, massage therapies and wonderful, tasty Moroccan cuisine.
+                        We welcome any questions you may have about our programme or indeed any other
+                        aspect of our retreat.<a class="primary_btn" href="#"> | Contact Us |</a>
+                    </p>
+
+                           
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="container main wrapper">
+        <article>
+            <div class="article_image">
+                <a href="#">
+                    <img src="/static/img/175790217.jpg" alt="" title="">
+                </a>
+            </div>
+            <div class="post">
+                <h1 class="title">
+                    <a href="#">Duis aute irure dolor in henderit in voluptate.</a>
+                </h1>
+                
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+
+                <a class="read_more" href="#">Continue Reading <i class="read_more_arrow"></i> </a>
+            </div>
+        </article>
+            <article>
+            <div class="article_image">
+                <a href="#">
+                    <img src="/static/img/175790217.jpg" alt="" title="">
+                </a>
+            </div>
+            <div class="post">
+                <h1 class="title">
+                    <a href="#">Duis aute irure dolor in henderit in voluptate.</a>
+                </h1>
+                
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+
+                <a class="read_more" href="#">Continue Reading <i class="read_more_arrow"></i> </a>
+            </div>
+        </article>
+            <article>
+            <div class="article_image">
+                <a href="#">
+                    <img src="/static/img/175790217.jpg" alt="" title="">
+                </a>
+            </div>
+            <div class="post">
+                <h1 class="title">
+                    <a href="#">Duis aute irure dolor in henderit in voluptate.</a>
+                </h1>
+                
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+
+                <a class="read_more" href="#">Continue Reading <i class="read_more_arrow"></i> </a>
+            </div>
+        </article>
+        </section><!-- Main End -->
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,29 @@
+{% extends "__layout__.html" %}
+{% block content %}
+
+<div class="textcenterwide sp spb-half ">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1>Food</h1>
+                
+                    <p>
+                        We are concerned with your wellbeing. We want you to have a wonderful, relaxing
+						and enlightening stay with us. We also want you to enjoy an authentic Moroccan
+						experience. We have therefore engaged talented local chefs who are committed to
+						and passionate about providing the very best Moroccan feasts. Breakfast, lunch and
+						dinner will be provided throughout your stay and you can expect to eat traditionally,
+						enjoying the array of flavours and colours typical of a Moroccan diet. We will of
+						course, tailor our menus to suit your dietary requirements. We invite you to let us
+						care for you…<a class="primary_btn" href="#"> | Contact Us |</a>
+                    </p>
+
+                           
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

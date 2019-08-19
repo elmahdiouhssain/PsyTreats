@@ -1,0 +1,102 @@
+{% extends "__layout__.html" %}
+{% block content %}
+<style type="text/css">
+   .article_image{
+    width: 470px;
+    margin-right: 40px;
+}
+</style>
+
+<div class="textcenterwide sp spb-half ">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1>Alex Wedlock</h1>
+
+<style>
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #3b8e4a;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+h3 {
+  background-color: #fff;
+
+}
+</style>
+                        <center>
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="static/img/ab.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <br>
+                            <h3><strong>Alex Wedlock</strong></h3> 
+                              <p>Psychodynamic & Psychotherapist</p> 
+                              <p><i class="fa fa-facebook-official" aria-hidden="true"></i></p>
+                              <p><i class="fa fa-instagram" aria-hidden="true"></i></p>
+                              <p><i class="fa fa-google-plus-official" aria-hidden="true"></i></p>
+                            </div>
+                          </div>
+                        </div>
+                        </center>
+                        <br>
+                        <br>
+
+                    <p>
+                        Alex is a Psychodynamic Psychotherapist. She is also qualified within the fields of
+                        Neuro Linguistic Programming and Hypnotherapy. Her work is informed by
+                        influences such as Sigmund Freud and Carl Jung. She has a breadth of experience
+                        and runs a busy private practice in Cornwall, UK.
+                        Alex is a creative therapist and used her various qualifications and training together
+                        with her vast and varied experiences to design our programme so that it can be
+                        used flexibly with you in mind. She is passionate about people and intrigued by how
+                        we think. Alex will be delivering our programme during your stay. You can expect
+                        her to meet you with her own unique blend of energy, vitality and understanding.
+                        She has a straight forward and firm intention to make things feel more comfortable
+                        and empower positive change.</p>
+
+                           
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

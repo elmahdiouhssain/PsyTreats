@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome 4.7.0 -->
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    
+    <!-- Main style -->
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" media="screen">
+
+    <link href="{{ url_for('static', filename='css/style2.css') }}" rel="stylesheet" media="screen">
+
+
+    <!-- Optional JavaScript -->
+    <script src="{{url_for('static', filename='js/lazysizes.min.js') }}"></script>
+
+    <script src="{{url_for('static', filename='js/jquery.min.js') }}"></script>
+
+    <script src="{{url_for('static', filename='js/fun.js') }}"></script>
+
+
+    <link rel="shortcut icon" href="/favicon-pelot.ico" type="image/x-icon" />
+    
+    <link rel="canonical" href="#">
+
+    <meta name="description" content="#.">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="article">
+
+    {% if title %}
+        <title>PSYCOTHERAPYRETREAT.COM | {{ title }}</title>
+    {% else %}
+        <title>PSYCOTHERAPYRETREAT.COM</title>
+    {% endif %}
+
+    
+    
+</head>
+<body class="home-page headerburgernav  contains-header">
+    <div class="skip"><a href="#main-content" class="offscreen">Skip to content</a></div>
+    
+<nav id="nav">
+    <div class="container">
+        <a class="nav-icon" aria-label="Menu" title="Menu"><i class="fa fa-bars fa-3x" aria-hidden="true"></i><span>Menu</span></a>
+        <a href="/" title="" class="logo" data-sticky=""><img src="/static/img/logo.png" alt="" /></a>
+            <ul class="primary-nav">
+                    <li class="home">
+                        <a href="/" class="text-link">Home</a>
+                    </li>
+                    <li class="invite">
+                        <a href="{{ url_for('main.invitation') }}" class="text-link">Our Invitaion</a>
+                    </li>
+                    <li class="food">
+                        <a href="{{ url_for('main.food') }}" class="text-link">Food</a>
+                    </li>
+                    <li class="yoga">
+                        <a href="{{ url_for('main.yoga') }}" class="text-link">Yoga</a>
+                    </li>
+                    <li class="exp">
+                        <a href="{{ url_for('main.exp') }}" class="text-link">What you can expect</a>
+                    </li>
+                    <li class="location">
+                        <a href="{{ url_for('main.location') }}" class="text-link">The Location</a>
+                    </li>
+                    <li class="about_us">
+                        <a href="{{ url_for('main.about') }}" class="text-link">About Us</a>
+                    </li>
+                    <li class="the_programme">
+                        <a href="{{ url_for('main.programme') }}" class="text-link">Programme</a>
+                    </li>
+                    <li class="latest_news">
+                          <a href="/programmes/" class="text-link">Latest News</a>
+                    </li>
+                     <li class="book_now">
+                          <a href="/programmes/" class="text-link">Book Now</a>
+                    </li>
+
+
+            </ul>            
+                <ul class="primary-cta">
+                    <li><a href="{{ url_for('contact.index') }}" class="btn">Enquire Now</a></li>
+                </ul>
+    </div>
+</nav>
+
+
+    <main id="main-content">
+
+
+            {% block content %}{% endblock content %}
+
+
+
+
+
+
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+
+
+                <div class="col-lg-3 col-md-8 lg-pt-30">
+
+    <div class="phone-number">
+        <span><a href="tel:+330642075132">+44 78 10 44 64 96</a></span>
+    </div>
+                                            <p class="email">PSYCOTHERAPYRETREAT.COM </p>
+                </div>
+
+            <nav class="col-lg-9 col-md-8 lg-pt-30">
+                <ul class="footer-nav">
+                        <li class=""><a href="/" class="text-link">Home</a></li>
+                        <li class=""><a href="{{ url_for('main.about') }}" class="text-link">About Us</a></li>
+                        <li class=""><a href="{{ url_for('main.programme') }}" class="text-link">Programmes</a></li>
+                        <li class=""><a href="#" class="text-link">Latest News</a></li>
+                        <li class=""><a href="{{ url_for('contact.index') }}" class="text-link">Enquire</a></li>
+                </ul>
+            </nav>
+
+
+        </div>        
+
+        <div class="row lg-pt-20">
+            <div class="col-lg-6 col-md-12 pt-20">
+ <address>11 Walsingham Place, Truro,Cornwall TR1 2RP United Kingdom</address>                                                 <div id="copyright">
+                    <p class="copyright">&copy; Copyright 2019 FamousMedia. All rights reserved.</p>               
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 pt-20">                
+                <ul class="footer-logos">
+                            
+                </ul>
+            </div>
+        </div>
+
+            <div class="row pt-10">
+                <nav class="col-12 legal-nav">
+                    <ul>
+                            <li><a href="/privacy-policy/" class="text-link">Privacy Policy</a></li>
+                            <li><a href="/cookie-policy/" class="text-link">Cookie Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+</footer>
+    
